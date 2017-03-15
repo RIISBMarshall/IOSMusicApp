@@ -7,17 +7,15 @@
 //
 
 import UIKit
+import Firebase
 
 class BandsTableViewController: UITableViewController {
 
+    let bandsModel = BandsModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        bandsModel.fetch()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,24 +27,29 @@ class BandsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return bandsModel.bandDetails.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "bandCell", for: indexPath)
 
         // Configure the cell...
-
+        let bandDetail = bandsModel.bandDetails[indexPath.row]
+        cell.textLabel?.text = bandDetail.bandName
+        cell.detailTextLabel?.text = bandDetail.nextShowDate
+        cell.imageView?.image = UIImage(named: bandDetail.thumbImageName!)
         return cell
     }
-    */
-
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 88
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -82,14 +85,18 @@ class BandsTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if (segue.identifier == "showDetail") {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let bandsDetailViewController:BandsDetailViewController =
+                    segue.destination as! BandsDetailViewController
+                let bandDetail = bandsModel.bandDetails[indexPath.row]
+                bandsDetailViewController.currentBandDetail =
+                    bandDetail
+            } }
     }
-    */
-
 }

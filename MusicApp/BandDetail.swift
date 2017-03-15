@@ -9,5 +9,13 @@
 import UIKit
 
 class BandDetail: NSObject {
-
+    var bandName:String?
+    var bandType:String?
+    var bandDescription:String?
+    var thumbImageName:String?
+    var nextShowDate:String?
+    var nextShowTime:String?
+    var venue:String?
+    var showDetails:String?
+    var videoURL:String?
 }

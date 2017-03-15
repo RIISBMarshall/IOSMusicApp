@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F44CA2A0F6B711F9DE30A06 /* libPods-MusicApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64349D3928C04D5FEAC6355B /* libPods-MusicApp.a */; };
 		7482DAAE1E7714640009941A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7482DAAD1E7714640009941A /* AppDelegate.swift */; };
 		7482DAB01E7714640009941A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7482DAAF1E7714640009941A /* ViewController.swift */; };
 		7482DAB31E7714640009941A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7482DAB11E7714640009941A /* Main.storyboard */; };
@@ -14,6 +15,21 @@
 		7482DAB81E7714640009941A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7482DAB61E7714640009941A /* LaunchScreen.storyboard */; };
 		7482DAC31E7714650009941A /* MusicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7482DAC21E7714650009941A /* MusicAppTests.swift */; };
 		7482DACE1E7714650009941A /* MusicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7482DACD1E7714650009941A /* MusicAppUITests.swift */; };
+		7482DADF1E771A610009941A /* thumb-ambulance-ltd.png in Resources */ = {isa = PBXBuildFile; fileRef = 7482DADB1E771A610009941A /* thumb-ambulance-ltd.png */; };
+		7482DAE01E771A610009941A /* thumb-black-angels.png in Resources */ = {isa = PBXBuildFile; fileRef = 7482DADC1E771A610009941A /* thumb-black-angels.png */; };
+		7482DAE11E771A610009941A /* thumb-nicole-atkins.png in Resources */ = {isa = PBXBuildFile; fileRef = 7482DADD1E771A610009941A /* thumb-nicole-atkins.png */; };
+		7482DAE21E771A610009941A /* thumb-sleepies.png in Resources */ = {isa = PBXBuildFile; fileRef = 7482DADE1E771A610009941A /* thumb-sleepies.png */; };
+		7482DAE51E772A0E0009941A /* BandsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7482DAE41E772A0E0009941A /* BandsTableViewController.swift */; };
+		7482DAE71E7831190009941A /* BandsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7482DAE61E7831190009941A /* BandsDetailViewController.swift */; };
+		7482DAE91E7833850009941A /* BandDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7482DAE81E7833850009941A /* BandDetail.swift */; };
+		7482DAEB1E7858E30009941A /* locationIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7482DAEA1E7858E30009941A /* locationIcon.png */; };
+		7482DAEE1E7863260009941A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7482DAED1E7863260009941A /* MapKit.framework */; };
+		7482DAF21E7869EA0009941A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7482DAF11E7869EA0009941A /* MapViewController.swift */; };
+		7482DAF61E7984950009941A /* BandsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7482DAF51E7984950009941A /* BandsModel.swift */; };
+		7482DAF81E798D660009941A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7482DAF71E798D660009941A /* Podfile */; };
+		7482DAFD1E79A47C0009941A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7482DAFC1E79A47C0009941A /* GoogleService-Info.plist */; };
+		7482DAFE1E79A47C0009941A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7482DAFC1E79A47C0009941A /* GoogleService-Info.plist */; };
+		7482DAFF1E79A47C0009941A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7482DAFC1E79A47C0009941A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05AD689F8B4D78B61152F680 /* Pods-MusicApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicApp/Pods-MusicApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1379F701612BF4C0C13D9332 /* Pods-MusicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicApp/Pods-MusicApp.release.xcconfig"; sourceTree = "<group>"; };
+		64349D3928C04D5FEAC6355B /* libPods-MusicApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusicApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7482DAAA1E7714640009941A /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7482DAAD1E7714640009941A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7482DAAF1E7714640009941A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +66,20 @@
 		7482DAC91E7714650009941A /* MusicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7482DACD1E7714650009941A /* MusicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAppUITests.swift; sourceTree = "<group>"; };
 		7482DACF1E7714650009941A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7482DADB1E771A610009941A /* thumb-ambulance-ltd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumb-ambulance-ltd.png"; path = "../../../Downloads/thumb-ambulance-ltd.png"; sourceTree = "<group>"; };
+		7482DADC1E771A610009941A /* thumb-black-angels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumb-black-angels.png"; path = "../../../Downloads/thumb-black-angels.png"; sourceTree = "<group>"; };
+		7482DADD1E771A610009941A /* thumb-nicole-atkins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumb-nicole-atkins.png"; path = "../../../Downloads/thumb-nicole-atkins.png"; sourceTree = "<group>"; };
+		7482DADE1E771A610009941A /* thumb-sleepies.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumb-sleepies.png"; path = "../../../Downloads/thumb-sleepies.png"; sourceTree = "<group>"; };
+		7482DAE41E772A0E0009941A /* BandsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandsTableViewController.swift; sourceTree = "<group>"; };
+		7482DAE61E7831190009941A /* BandsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandsDetailViewController.swift; sourceTree = "<group>"; };
+		7482DAE81E7833850009941A /* BandDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandDetail.swift; sourceTree = "<group>"; };
+		7482DAEA1E7858E30009941A /* locationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = locationIcon.png; path = ../../../Downloads/locationIcon.png; sourceTree = "<group>"; };
+		7482DAED1E7863260009941A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7482DAF11E7869EA0009941A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7482DAF51E7984950009941A /* BandsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandsModel.swift; sourceTree = "<group>"; };
+		7482DAF71E798D660009941A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7482DAF91E798F240009941A /* MusicApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		7482DAFC1E79A47C0009941A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7482DAEE1E7863260009941A /* MapKit.framework in Frameworks */,
+				5F44CA2A0F6B711F9DE30A06 /* libPods-MusicApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +112,13 @@
 		7482DAA11E7714640009941A = {
 			isa = PBXGroup;
 			children = (
+				7482DAF71E798D660009941A /* Podfile */,
 				7482DAAC1E7714640009941A /* MusicApp */,
 				7482DAC11E7714650009941A /* MusicAppTests */,
 				7482DACC1E7714650009941A /* MusicAppUITests */,
 				7482DAAB1E7714640009941A /* Products */,
+				7482DAEC1E7863260009941A /* Frameworks */,
+				D8B6A385D4660557FAA112B4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +136,19 @@
 			isa = PBXGroup;
 			children = (
 				7482DAAD1E7714640009941A /* AppDelegate.swift */,
+				7482DAF51E7984950009941A /* BandsModel.swift */,
 				7482DAAF1E7714640009941A /* ViewController.swift */,
+				7482DAE41E772A0E0009941A /* BandsTableViewController.swift */,
+				7482DAE61E7831190009941A /* BandsDetailViewController.swift */,
+				7482DAE81E7833850009941A /* BandDetail.swift */,
+				7482DAF11E7869EA0009941A /* MapViewController.swift */,
 				7482DAB11E7714640009941A /* Main.storyboard */,
 				7482DAB41E7714640009941A /* Assets.xcassets */,
 				7482DAB61E7714640009941A /* LaunchScreen.storyboard */,
 				7482DAB91E7714640009941A /* Info.plist */,
+				7482DAFC1E79A47C0009941A /* GoogleService-Info.plist */,
+				7482DAE31E771A810009941A /* images */,
+				7482DAF91E798F240009941A /* MusicApp-Bridging-Header.h */,
 			);
 			path = MusicApp;
 			sourceTree = "<group>";
@@ -125,6 +171,36 @@
 			path = MusicAppUITests;
 			sourceTree = "<group>";
 		};
+		7482DAE31E771A810009941A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7482DADB1E771A610009941A /* thumb-ambulance-ltd.png */,
+				7482DADC1E771A610009941A /* thumb-black-angels.png */,
+				7482DADD1E771A610009941A /* thumb-nicole-atkins.png */,
+				7482DADE1E771A610009941A /* thumb-sleepies.png */,
+				7482DAEA1E7858E30009941A /* locationIcon.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		7482DAEC1E7863260009941A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7482DAED1E7863260009941A /* MapKit.framework */,
+				64349D3928C04D5FEAC6355B /* libPods-MusicApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8B6A385D4660557FAA112B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05AD689F8B4D78B61152F680 /* Pods-MusicApp.debug.xcconfig */,
+				1379F701612BF4C0C13D9332 /* Pods-MusicApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7482DAD21E7714650009941A /* Build configuration list for PBXNativeTarget "MusicApp" */;
 			buildPhases = (
+				92F204DAF50596D8FBA82C25 /* [CP] Check Pods Manifest.lock */,
 				7482DAA61E7714640009941A /* Sources */,
 				7482DAA71E7714640009941A /* Frameworks */,
 				7482DAA81E7714640009941A /* Resources */,
+				92BFA1FC283B6784E8235DD8 /* [CP] Embed Pods Frameworks */,
+				65565BB0A39E2C6F7C316D09 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +272,7 @@
 				TargetAttributes = {
 					7482DAA91E7714640009941A = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					7482DABD1E7714650009941A = {
@@ -232,7 +312,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7482DAE01E771A610009941A /* thumb-black-angels.png in Resources */,
+				7482DADF1E771A610009941A /* thumb-ambulance-ltd.png in Resources */,
+				7482DAE11E771A610009941A /* thumb-nicole-atkins.png in Resources */,
 				7482DAB81E7714640009941A /* LaunchScreen.storyboard in Resources */,
+				7482DAE21E771A610009941A /* thumb-sleepies.png in Resources */,
+				7482DAEB1E7858E30009941A /* locationIcon.png in Resources */,
+				7482DAF81E798D660009941A /* Podfile in Resources */,
+				7482DAFD1E79A47C0009941A /* GoogleService-Info.plist in Resources */,
 				7482DAB51E7714640009941A /* Assets.xcassets in Resources */,
 				7482DAB31E7714640009941A /* Main.storyboard in Resources */,
 			);
@@ -242,6 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7482DAFE1E79A47C0009941A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,17 +337,71 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7482DAFF1E79A47C0009941A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65565BB0A39E2C6F7C316D09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusicApp/Pods-MusicApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92BFA1FC283B6784E8235DD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusicApp/Pods-MusicApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92F204DAF50596D8FBA82C25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7482DAA61E7714640009941A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7482DAE71E7831190009941A /* BandsDetailViewController.swift in Sources */,
+				7482DAF21E7869EA0009941A /* MapViewController.swift in Sources */,
+				7482DAF61E7984950009941A /* BandsModel.swift in Sources */,
 				7482DAB01E7714640009941A /* ViewController.swift in Sources */,
+				7482DAE51E772A0E0009941A /* BandsTableViewController.swift in Sources */,
+				7482DAE91E7833850009941A /* BandDetail.swift in Sources */,
 				7482DAAE1E7714640009941A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,24 +550,31 @@
 		};
 		7482DAD31E7714650009941A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05AD689F8B4D78B61152F680 /* Pods-MusicApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MusicApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = riis.MusicApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicApp/MusicApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		7482DAD41E7714650009941A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1379F701612BF4C0C13D9332 /* Pods-MusicApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MusicApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = riis.MusicApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicApp/MusicApp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -503,6 +652,7 @@
 				7482DAD41E7714650009941A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7482DAD51E7714650009941A /* Build configuration list for PBXNativeTarget "MusicAppTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +661,7 @@
 				7482DAD71E7714650009941A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7482DAD81E7714650009941A /* Build configuration list for PBXNativeTarget "MusicAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +670,7 @@
 				7482DADA1E7714650009941A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
