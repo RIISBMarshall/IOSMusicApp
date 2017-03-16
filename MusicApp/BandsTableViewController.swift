@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SystemConfiguration
 
 class BandsTableViewController: UITableViewController {
 
@@ -24,12 +25,46 @@ class BandsTableViewController: UITableViewController {
         self.view.addSubview(loader)
         loader.startAnimating()
         
+        if(isInternetAvailable()){
         bandsModel.fetch {[weak self] (Void) -> Void in
             if let strongSelf = self {
                 loader.stopAnimating()
+                if strongSelf.bandsModel.isError {
+                    strongSelf.handleError()
+                } else {
                 strongSelf.tableView.reloadData()
+                }
             }
         }
+        } else{
+            handleError()
+        }
+    }
+    
+    func handleError() {
+        let alert = UIAlertView(title: "Alert", message: "Oops! It’s not you, it’s us. No data could be loaded. Please try again later.", delegate: nil, cancelButtonTitle: "Cancel")
+        alert.show()
+    }
+    
+    func isInternetAvailable() -> Bool
+    {
+        var zeroAddress = sockaddr_in()
+        zeroAddress.sin_len = UInt8(MemoryLayout.size(ofValue: zeroAddress))
+        zeroAddress.sin_family = sa_family_t(AF_INET)
+        
+        let defaultRouteReachability = withUnsafePointer(to: &zeroAddress) {
+            $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {zeroSockAddress in
+                SCNetworkReachabilityCreateWithAddress(nil, zeroSockAddress)
+            }
+        }
+        
+        var flags = SCNetworkReachabilityFlags()
+        if !SCNetworkReachabilityGetFlags(defaultRouteReachability!, &flags) {
+            return false
+        }
+        let isReachable = (flags.rawValue & UInt32(kSCNetworkFlagsReachable)) != 0
+        let needsConnection = (flags.rawValue & UInt32(kSCNetworkFlagsConnectionRequired)) != 0
+        return (isReachable && !needsConnection)
     }
 
     override func didReceiveMemoryWarning() {
