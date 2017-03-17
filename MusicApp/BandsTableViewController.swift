@@ -13,22 +13,26 @@ import SystemConfiguration
 class BandsTableViewController: UITableViewController {
 
     let bandsModel = BandsModel()
+    let loader = UIActivityIndicatorView(activityIndicatorStyle:
+        UIActivityIndicatorViewStyle.gray)
+    
+    var detailViewController:BandsDetailViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let loader = UIActivityIndicatorView(activityIndicatorStyle:
-            UIActivityIndicatorViewStyle.gray)
         
         loader.frame = CGRect(x: (self.view.frame.size.width-40)/2, y: (self.view.frame.size.height-40)/2, width: 40.0, height: 40.0)
         
         self.view.addSubview(loader)
         loader.startAnimating()
         
+        self.refreshControl?.addTarget(self, action: "refresh", for:
+            UIControlEvents.valueChanged)
+        
         if(isInternetAvailable()){
         bandsModel.fetch {[weak self] (Void) -> Void in
             if let strongSelf = self {
-                loader.stopAnimating()
+                self?.loader.stopAnimating()
                 if strongSelf.bandsModel.isError {
                     strongSelf.handleError()
                 } else {
@@ -44,6 +48,24 @@ class BandsTableViewController: UITableViewController {
     func handleError() {
         let alert = UIAlertView(title: "Alert", message: "Oops! It’s not you, it’s us. No data could be loaded. Please try again later.", delegate: nil, cancelButtonTitle: "Cancel")
         alert.show()
+    }
+    
+    func refresh() {
+        bandsModel.bandDetails.removeAll(keepingCapacity: false)
+        if(isInternetAvailable()){
+            bandsModel.fetch {[weak self] (Void) -> Void in
+                if let strongSelf = self {
+                    strongSelf.refreshControl?.endRefreshing()
+                    if strongSelf.bandsModel.isError {
+                        strongSelf.handleError()
+                    } else {
+                        strongSelf.tableView.reloadData()
+                    }
+                }
+            }
+        } else{
+            handleError()
+        }
     }
     
     func isInternetAvailable() -> Bool
@@ -136,6 +158,14 @@ class BandsTableViewController: UITableViewController {
 
     
     // MARK: - Navigation
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if (UIDevice.current.model.range(of: "iPad") != nil) {
+            let bandDetail = bandsModel.bandDetails[indexPath.row]
+            detailViewController.currentBandDetail = bandDetail
+            detailViewController.refreshView()
+        }
+    }
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

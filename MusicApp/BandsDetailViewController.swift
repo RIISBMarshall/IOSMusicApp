@@ -33,6 +33,12 @@ class BandsDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if (UIDevice.current.model.range(of: "iPad") == nil) {
+            self.refreshView()
+        }
+    }
+    
+    func refreshView(){
         bandNameLabel.text = currentBandDetail?.bandName
         bandTypeLabel.text = currentBandDetail?.bandType
         venueLabel.text = currentBandDetail?.venue
@@ -46,7 +52,6 @@ class BandsDetailViewController: UIViewController {
         
         videoWebView.loadHTMLString(htmlString, baseURL: nil)
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
